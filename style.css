@@ -27,6 +27,7 @@ html, body {
     flex-shrink: 0;
   }
   .page-body {
+    border-radius: 50% 20% / 10% 40%;
     flex-grow: 1;
   }
 
