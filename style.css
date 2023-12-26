@@ -84,13 +84,13 @@ html, body {
     border-color: #4d90fe;
   }
   
-  #title {
+  /* #title {
     color: #fff;
     background-color: #4d90fe;
     font-size: 25px;
     font-weight: 500;
     padding: 6px 12px;
-  }
+  } */
 
   .pac-card #pac-container .pac-controls #pac-input #title {
     box-sizing: border-box;
