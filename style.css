@@ -20,7 +20,7 @@ html, body {
   }
 
   #description {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 15px;
     font-weight: 300;
   }
@@ -109,7 +109,7 @@ html, body {
 
 #gradient {
     background-position: bottom 12px left 20px;
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
     background-image: radial-gradient(circle, #fddb32, yellow, white);
 }
