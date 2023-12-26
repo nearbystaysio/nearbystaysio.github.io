@@ -2,14 +2,14 @@ html, body {
     background-image: url('./images.png');
     box-sizing: border-box;
     height: 100%;
-    padding: 0;
+    padding: 24px;
     margin: 0;
     /* background-size: cover; */
     background-position: center bottom;
     /* background-size: contain; */
     background-size: 80%;
     background-repeat: no-repeat;
-    translate: 0px -100px;
+    /* translate: 0px -100px; */
     /* background-position: bottom 120px left 200px;
     width: 100%;
     background-image: radial-gradient(circle, #fddb32, yellow, white); */
