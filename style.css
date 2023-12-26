@@ -108,6 +108,10 @@ html, body {
   .w3-hover-border-theme:hover {border-color:#3662d8 !important}
 
 #gradient {
+    
+    background-size: cover;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
     background-position: bottom 12px left 20px;
     height: 100%;
     width: 100%;
