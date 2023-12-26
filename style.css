@@ -99,7 +99,7 @@ html, body {
   .w3-theme-light {color:#000 !important; background-color:#f3f6fd !important}
   .w3-theme-dark, .w3-theme-action {color:#fff !important; background-color:#191e3b !important}
   
-  .w3-theme {color:#fff !important; background-color:#3662d8 !important /* #191e3b => #162e72 */}
+  .w3-theme {color:#fff !important; background-color:#3662d8 !important /* #191e3b | #343b53 => #162e72 & #fddb32 #ff0 */}
   .w3-text-theme {color:#3662d8 !important}
   .w3-border-theme {border-color:#3662d8 !important}
   
