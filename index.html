@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1 user-scalable=no">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="description" content="Book your next stay at Nearby Stays!">
+    <link rel="canonical" href="https://nearbystays.com/">
+    <link rel="manifest" href="manifest.json">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='Nearby Stays'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Nearby Stays'>
+    <link rel='icon' sizes='192x192' href='/images/icon.png'>
+    <link rel='apple-touch-icon'  href='/images/icon.png'>
+    <meta name='msapplication-TileImage' content='/images/icon.png'>
+    <meta name='msapplication-TileColor' content='#ffffff'>
+    <meta name='theme-color' content='#ffffff'>
+    <meta property='og:title' content='Nearby Stays'>
+    <meta property='og:type' content='website'>
+    <meta property='og:image' content='https://nearbystays.com/images/icon.png'>
+    <meta property='og:url' content='https://nearbystays.com/'><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Nearby Stays</title>
   <style>
     html, body {
@@ -26,9 +45,85 @@
       flex-grow: 1;
     }
 
+    #description {
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    
+    #infowindow-content .title {
+      font-weight: bold;
+    }
+    
+    #infowindow-content {
+      display: none;
+    }
+    
+    #map #infowindow-content {
+      display: inline;
+    }
+    
+    .pac-card {
+      background-color: #fff;
+      border: 0;
+      box-sizing: border-box;
+      border-radius: 1px;
+      box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.27);
+      margin: 10px;
+      padding: 0 0.5em;
+      font: 400 18px Roboto, Arial, sans-serif;
+      overflow: hidden;
+      font-family: Roboto;
+      padding: 0 !important;
+    }
+    
+    #pac-container {
+      padding-bottom: 12px;
+      margin-right: 12px;
+    }
+    
+    .pac-controls {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 5px 11px;
+    }
+    
+    .pac-controls label {
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: 300;
+    }
+    
+    #pac-input {
+      box-sizing: border-box;
+      background-color: #fff;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 12px;
+      padding: 0 11px 0 13px;
+      text-overflow: ellipsis;
+      width: 400px;
+    }
+    
+    #pac-input:focus {
+      border-color: #4d90fe;
+    }
+    
+    #title {
+      color: #fff;
+      background-color: #4d90fe;
+      font-size: 25px;
+      font-weight: 500;
+      padding: 6px 12px;
+    }
+
+    .pac-card #pac-container .pac-controls #pac-input #title {
+      box-sizing: border-box;
+    }
+    
     .w3-theme-light {color:#000 !important; background-color:#f3f6fd !important}
-    .w3-theme-dark {color:#fff !important; background-color:#162e72 !important}
-    .w3-theme-action {color:#fff !important; background-color:#162e72 !important}
+    .w3-theme-dark, .w3-theme-action {color:#fff !important; background-color:#162e72 !important}
     
     .w3-theme {color:#fff !important; background-color:#3662d8 !important}
     .w3-text-theme {color:#3662d8 !important}
@@ -53,6 +148,22 @@
     <div class="w3-container w3-padding w3-margin-left w3-margin-right w3-theme-light w3-round-large">
       <div class="w3-container eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays,flights" data-network="pz" data-camref="1011l3xpqG"></div>
       <script class="eg-widgets-script" src="https://affiliates.expediagroup.com/products/widgets/assets/eg-widgets.js"></script>
+    </div>
+
+    <div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">Nearby Stays</div>
+        <div id="pac-container">
+          <input id="pac-input" type="text" placeholder="Enter A Location" />
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <span id="place-name" class="title"></span><br />
+      <img id="place-photos"></img><br />
+      <!--div id="pay"></div><br /-->
+      <span id="place-address"></span>
     </div>
     
   </main>
