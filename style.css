@@ -106,3 +106,10 @@ html, body {
   .w3-hover-theme:hover {color:#fff !important; background-color:#3662d8 !important}
   .w3-hover-text-theme:hover {color:#3662d8 !important}
   .w3-hover-border-theme:hover {border-color:#3662d8 !important}
+
+#gradient {
+    background-position: bottom 12px left 20px;
+    height: 150px;
+    width: 150px;
+    background-image: radial-gradient(circle, #fddb32, yellow, white);
+}
