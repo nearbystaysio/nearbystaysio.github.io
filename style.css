@@ -1,1 +1,108 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* border-radius: 12px; */
+  }
+  .wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header, .page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .page-body {
+    flex-grow: 1;
+  }
 
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 1px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.27);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0 !important;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+
+  .pac-card #pac-container .pac-controls #pac-input #title {
+    box-sizing: border-box;
+  }
+  
+  .w3-theme-light {color:#000 !important; background-color:#f3f6fd !important}
+  .w3-theme-dark, .w3-theme-action {color:#fff !important; background-color:#162e72 !important}
+  
+  .w3-theme {color:#fff !important; background-color:#3662d8 !important}
+  .w3-text-theme {color:#3662d8 !important}
+  .w3-border-theme {border-color:#3662d8 !important}
+  
+  .w3-hover-theme:hover {color:#fff !important; background-color:#3662d8 !important}
+  .w3-hover-text-theme:hover {color:#3662d8 !important}
+  .w3-hover-border-theme:hover {border-color:#3662d8 !important}
