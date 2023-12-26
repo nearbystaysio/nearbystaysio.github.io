@@ -4,8 +4,9 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-size: cover;
-    /* background-size: contain; */
+    /* background-size: cover; */
+    background-position: center bottom;
+    background-size: contain;
     background-repeat: no-repeat;
     
     /* background-position: bottom 120px left 200px;
