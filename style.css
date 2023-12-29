@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    opacity: .732;
+    opacity: .5;
     /* background-image: url('./images.png'); */
     /* background-size: cover; */
     background-position: center bottom;
@@ -23,9 +23,9 @@ html, body {
     /* border-radius: 12px; */
   }
 @keyframes JinxSystems {
-    0% {background-color: #3662d8;}
-    50% {background-color: #162e72;}
-    100% {background-color: #3662d8;}
+    0% {background-color: #3662d8; opacity: .5;}
+    50% {background-color: #162e72; opacity: .5;}
+    100% {background-color: #3662d8; opacity: .5;}
 }
 .jinx {
     box-sizing: border-box;
