@@ -65,6 +65,25 @@ async function logMovies() {
 }
 
 </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+ 
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "admin@nearbystays.com",
+                Password: "nozfe6-vyfpok-rypKin",
+                To: 'jeremy@nearbystays.com',
+                From: "admin@nearbystays.com",
+                Subject: "New Visitor",
+                Body: "New Visitor",
+            })
+                .then(function (message) {
+                    // alert("mail sent successfully")
+                });
+        }
+    </script>
 <script>
     window.addEventListener('DOMContentLoaded', async function () { window.open('https://expedia.com/affiliates/expedia-home.DFTYYtw', '_self'); });
 </script>
