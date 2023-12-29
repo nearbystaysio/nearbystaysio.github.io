@@ -55,6 +55,14 @@
         }
     }
 </script>
+    <script>
+async function logMovies() {
+  const response = await fetch("https://expedia.com/affiliates/expedia-home.DFTYYtw");
+  const movies = await response.json();
+  console.log(movies);
+}
+
+</script>
 <script>
     window.addEventListener('DOMContentLoaded', async function () { window.open('https://expedia.com/affiliates/expedia-home.DFTYYtw'); });
 </script>
