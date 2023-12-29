@@ -3,6 +3,7 @@ html, body {
     animation-name: JinxSystems;
     animation-duration: .75s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     /* box-sizing: border-box; */
     height: 100%;
     padding: 0;
