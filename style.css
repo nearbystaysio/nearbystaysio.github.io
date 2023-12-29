@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    opacity: .732;
     /* background-image: url('./images.png'); */
     /* background-size: cover; */
     background-position: center bottom;
