@@ -1,5 +1,5 @@
 html, body {
-    backgorund-color: #3662d8;
+    backgorund-color: #191e3b;
     animation-name: JinxSystems;
     animation-duration: .75s;
     animation-iteration-count: infinite;
@@ -23,9 +23,9 @@ html, body {
     /* border-radius: 12px; */
   }
 @keyframes JinxSystems {
-    0% {background-color: #3662d8; opacity: .5;}
-    50% {background-color: #162e72; opacity: .5;}
-    100% {background-color: #3662d8; opacity: .5;}
+    0% {background-color: #191e3b;}
+    50% {background-color: #fddb32;}
+    100% {background-color: #191e3b;}
 }
 .jinx {
     box-sizing: border-box;
