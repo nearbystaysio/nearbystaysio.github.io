@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!--meta http-equiv="refresh" content="URL='1;https://expedia.com/affiliates/expedia-home.DFTYYtw'" /-->
     <title>Nearby Stays</title>
     <!-- Google tag (gtag.js) -->
@@ -84,8 +87,20 @@
       <div class="w3-container eg-widget" data-widget="search" data-program="us-expedia" data-lobs="stays,flights" data-network="pz" data-camref="1011l3xpqG"></div>
       <script class="eg-widgets-script" src="https://affiliates.expediagroup.com/products/widgets/assets/eg-widgets.js"></script>
     </div>
-      <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="search-hotels-flights-cars-activities-more" data-link="home" data-camref="1011l3xpqG" data-pubref=""></div>
-<script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+    
+    <script class="eg-affiliate-banners-script" src="https://affiliates.expediagroup.com/products/banners/assets/eg-affiliate-banners.js"></script>
+    <div id="jinxReact"></div>
+    <script type="text/babel">
+      function Jinx() {
+        return <div class="eg-affiliate-banners" data-program="us-expedia" data-network="pz" data-layout="leaderboard" data-image="mountains" data-message="search-hotels-flights-cars-activities-more" data-link="home" data-camref="1011l3xpqG" data-pubref=""></div>
+    ;
+      }
+
+      const container = document.getElementById('jinxReact');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Jinx />)
+    </script>
+      
     <!--div style="width:100%;height:100%;" class="jinx w3-container w3-padding w3-margin-left w3-margin-right w3-theme-light w3-round-large">
         <iframe src="https://expedia.com/affiliates/expedia-home.DFTYYtw" style="width:100%;height:100%"></iframe>
         <div style="width:100%;height:100%"></div>
