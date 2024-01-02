@@ -1,14 +1,14 @@
 html, body {
-    backgorund-color: #191e3b;
+    /* backgorund-color: #191e3b;
     animation-name: JinxSystems;
     animation-duration: .25s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; */
     /* box-sizing: border-box; */
     height: 100%;
     padding: 0;
     margin: 0;
-    opacity: .5;
+    /* opacity: .5; */
     /* background-image: url('./images.png'); */
     /* background-size: cover; */
     background-position: center bottom;
