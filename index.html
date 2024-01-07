@@ -117,6 +117,69 @@ async function logMovies() {
 </script>
 </head>
 <body onclick="interfaceInteraction()">
+    <div typeof="schema:Product">
+      <div property="schema:sku" content="trinket-12345"></div>
+      <div property="schema:gtin14" content="12345678901234"></div>
+      <div property="schema:name" content="Nice trinket"></div>
+      <div rel="schema:image" resource="https://example.com/photos/16x9/trinket.jpg"></div>
+      <div rel="schema:image" resource="https://example.com/photos/4x3/trinket.jpg"></div>
+      <div rel="schema:image" resource="https://example.com/photos/1x1/trinket.jpg"></div>
+      <div property="schema:description" content="Trinket with clean lines"></div>
+      <div rel="schema:brand">
+        <div typeof="schema:Brand">
+          <div property="schema:name" content="MyBrand"></div>
+        </div>
+      </div>
+      <div rel="schema:offers">
+        <div typeof="schema:Offer">
+          <div rel="schema:url" resource="https://example.com/trinket_offer"></div>
+          <div property="schema:itemCondition" content="https://schema.org/NewCondition"></div>
+          <div property="schema:availability" content="https://schema.org/InStock"></div>
+          <div property="schema:price" content="39.99"></div>
+          <div property="schema:priceCurrency" content="CHF"></div>
+          <div property="schema:priceValidUntil" datatype="xsd:date" content="2020-11-20"></div>
+          <div rel="schema:hasMerchantReturnPolicy">
+            <div typeof="schema:MerchantReturnPolicy">
+              <div property="schema:applicableCountry" content="US"></div>
+              <div property="schema:returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow"></div>
+              <div property="schema:merchantReturnDays" content="60"></div>
+              <div property="schema:returnMethod" content="https://schema.org/ReturnByMail"></div>
+              <div property="schema:returnFees" content="https://schema.org/FreeReturn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    <div itemtype="https://schema.org/Product" itemscope>
+      <meta itemprop="sku" content="trinket-12345" />
+      <meta itemprop="gtin14" content="12345678901234" />
+      <meta itemprop="name" content="Nice trinket" />
+      <link itemprop="image" href="https://example.com/photos/16x9/trinket.jpg" />
+      <link itemprop="image" href="https://example.com/photos/4x3/trinket.jpg" />
+      <link itemprop="image" href="https://example.com/photos/1x1/trinket.jpg" />
+      <meta itemprop="description" content="Trinket with clean lines" />
+      <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
+        <meta itemprop="name" content="MyBrand" />
+      </div>
+      <div itemprop="offers" itemtype="https://schema.org/Offer" itemscope>
+        <link itemprop="url" href="https://www.example.com/trinket_offer" />
+        <meta itemprop="itemCondition" content="https://schema.org/NewCondition" />
+        <meta itemprop="availability" content="https://schema.org/InStock" />
+        <meta itemprop="price" content="39.99" />
+        <meta itemprop="priceCurrency" content="CHF" />
+        <meta itemprop="priceValidUntil" content="2020-11-20" />
+        <div itemprop="hasMerchantReturnPolicy" itemtype="https://schema.org/MerchantReturnPolicy" itemscope>
+          <meta itemprop="applicableCountry" content="US" />
+          <meta itemprop="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow" />
+          <meta itemprop="merchantReturnDays" content="60" />
+          <meta itemprop="returnMethod" content="https://schema.org/ReturnByMail" />
+          <meta itemprop="returnFees" content="https://schema.org/FreeReturn" />
+        </div>
+      </div>
+    </div>
+    </div>
+    
   <div class="wrapper">
   <header class="page-header">
 
